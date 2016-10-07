@@ -49,8 +49,8 @@
       "x86-64": {"url": "x86_64/libc.so"}
     },
     "main.nexe" : {
-      "x86-32": {"url": "https://storage.googleapis.com/muffin-knight-sc.appspot.com/unity-i686.nexe"},
-      "x86-64": {"url": "https://storage.googleapis.com/muffin-knight-sc.appspot.com/unity.nexe"}
+      "x86-32": {"url": "i686/unity.nexe"},
+      "x86-64": {"url": "x86_64/unity.nexe"}
     }
   }
 }
