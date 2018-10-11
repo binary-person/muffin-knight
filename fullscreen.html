@@ -298,7 +298,6 @@
                     setError(error);
                 }
                 else {
-                    console.log(e);
                     eval(e.data);
                 }
             }
@@ -306,11 +305,11 @@
             var listener = document.getElementById('listener');
             listener.addEventListener('progress', downloadProgress, true);
             listener.addEventListener('error', function(e) { console.error(e) }), true;
-            listener.addEventListener('load', function(e) { console.log(e) }, true);
-            listener.addEventListener('loadend', function(e) { console.log(e) }, true);
+            listener.addEventListener('load', function(e) { /*console.log(e)*/ }, true);
+            listener.addEventListener('loadend', function(e) { /*console.log(e)*/ }, true);
             listener.addEventListener('message', unityProgress, true);
         </script>
-        <embed id='unityEmbed' width="100%" height="100%" src="unity_nacl_files_3.x.x/unity.nmf" data="MK_NaCl.unity3d" type="application/x-nacl">
+        <embed id='UnityEmbed' width="100%" height="100%" src="unity_nacl_files_3.x.x/unity.nmf" data="MK_NaCl.unity3d" type="application/x-nacl">
     </div>
 </body>
 
