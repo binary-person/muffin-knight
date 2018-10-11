@@ -288,7 +288,6 @@
                     return;
                 }
                 else if (e.data.includes('Unity.SetProgress')) {
-                    console.log(e);
                     var progress = e.data.split('Unity.SetProgress')[1].slice(1, -1);
                     setProgress('Loading Unity: ', (progress * 100));
                 }
